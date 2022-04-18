@@ -1,5 +1,6 @@
 package com.example.TDTP;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -26,12 +27,17 @@ public class ChangeUserRoleTest {
     }
 
     @Test
-    public void testAddNonExistentEquipment() {
+    public void testChangeAdminToUser() {
 
     }
 
     @Test
-    public void testAddExistentEquipment() {
+    public void testChangeUserToAdmin() {
+
+    }
+
+    @AfterEach
+    public void cleanUp() {
 
     }
 }
