@@ -32,14 +32,13 @@ public class ManageEquipmentTest {
         driver.findElement(By.className("MuiButton-label")).click();
     }
 
+    // Tests whether adding new equipment works
     @Test
     public void testAddNonExistentEquipment() {
         WebDriverWait wait = new WebDriverWait(driver, 100);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button")));
-        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button"))).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]")));
-        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]"))).click();
 
         int count = driver.findElements(By.className("MuiTableRow-root")).size();
 
@@ -53,14 +52,13 @@ public class ManageEquipmentTest {
         deleteEntry();
     }
 
+    // Tests whether adding equipment with the same name as one already saved fails
     @Test
     public void testAddExistentEquipment() {
         WebDriverWait wait = new WebDriverWait(driver, 100);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button")));
-        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button"))).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]")));
-        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]"))).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/button")));
         WebElement input = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/div/div/input"));

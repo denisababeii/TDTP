@@ -4,13 +4,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ChangeUserRoleTest {
+import java.util.List;
+
+public class SearchUser_ViewInformation_IntegrationTest {
     WebDriver driver;
 
     @BeforeEach
@@ -26,18 +29,21 @@ public class ChangeUserRoleTest {
         driver.findElement(By.className("MuiButton-label")).click();
     }
 
+    // Tests whether searching for an existing user and retrieving its information works
     @Test
-    public void testChangeAdminToUser() {
+    public void testSearchView() {
+        WebDriverWait wait = new WebDriverWait(driver, 100);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[3]/div/button"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div/div[2]/div[4]/div/input"))).sendKeys("Babeii",Keys.ENTER);
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.className("MuiTableRow-root"),3));
 
-    }
-
-    @Test
-    public void testChangeUserToAdmin() {
-
+        driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr[1]/td[2]/div/div")).click();
+        WebElement elem = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/div[2]/div/div/div[2]/div[3]/p[2]")));
+        assert elem.getText().equals("Babeii");
     }
 
     @AfterEach
     public void cleanUp() {
-
+        driver.close();
     }
 }
