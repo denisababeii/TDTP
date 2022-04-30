@@ -1,5 +1,9 @@
 package com.example.TDTP;
 
-public class MainPage {
+import org.openqa.selenium.edge.EdgeDriver;
 
+public class MainPage {
+    public static void main(String[] args){
+
+    }
 }
