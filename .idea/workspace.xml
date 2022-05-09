@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Add ManageEquipmentTest">
-      <change afterPath="$PROJECT_DIR$/TDTDoc-Fia.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddNewBuildingTest.java" afterDir="false" />
+    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Add New Building Test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddNewBuildingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddNewBuildingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +47,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../Program Files/JetBrains/IntelliJ IDEA 2020.2.2/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -65,14 +69,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/drivers" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName">
+  <component name="RunManager" selected="JUnit.AddNewBuildingTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -82,6 +86,21 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddNewBuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.TDTP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.TDTP" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.AddNewBuildingTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,22 +116,6 @@
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
       <option name="MAIN_CLASS_NAME" value="com.example.TDTP.ManageEquipmentTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.deleteEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDTP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.TDTP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="deleteEntry" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddNewBuildingTest" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchEditName" />
         <item itemvalue="JUnit.ManageEquipmentTest" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testAddEditName" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.deleteEntry" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +191,8 @@
       <workItem from="1650366660609" duration="621000" />
       <workItem from="1650373355576" duration="8182000" />
       <workItem from="1650623034125" duration="1900000" />
+      <workItem from="1651646074399" duration="2427000" />
+      <workItem from="1652118338115" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="Add login">
       <created>1650286134548</created>
@@ -203,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650291298031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add New Building Test">
+      <created>1651646275037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651646275037</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add login" />
     <MESSAGE value="Add ManageEquipmentTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ManageEquipmentTest" />
+    <MESSAGE value="Add New Building Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add New Building Test" />
   </component>
 </project>

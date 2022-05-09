@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.TDTP.AddNewBuildingTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 161.3 s <<< FAILURE! - in com.example.TDTP.AddNewBuildingTest
+test_ADD_new_building_WHEN_valid_inputs_name_accepted  Time elapsed: 39.749 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.example.TDTP.AddNewBuildingTest.test_ADD_new_building_WHEN_valid_inputs_name_accepted(AddNewBuildingTest.java:174)
+
+test_DOES_NOT_ADD_WHEN_invalid_safeDistance_zero  Time elapsed: 65.243 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.example.TDTP.AddNewBuildingTest.test_DOES_NOT_ADD_WHEN_invalid_safeDistance_zero(AddNewBuildingTest.java:66)
+
