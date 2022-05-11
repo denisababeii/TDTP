@@ -22,11 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" afterDir="false" />
+    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Add SearchUser_ViewInformation_IntegrationTest">
+      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ChangeUserRoleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,14 @@
         <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="12" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="12" />
   </component>
   <component name="ProjectId" id="27yBKn6bwk2MBwpZJL3ZhDowx8K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -66,24 +75,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/drivers" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Invatare Interactiva/BE" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.47356322" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchUser_ViewInformation_IntegrationTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.deleteEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManageEquipmentTest.testAddNonExistentEquipment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDTP" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="deleteEntry" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.ManageEquipmentTest" />
+      <option name="METHOD_NAME" value="testAddNonExistentEquipment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.testAddEditName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchUser_ViewInformation_IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDTP" />
       <extension name="coverage">
         <pattern>
@@ -129,13 +140,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
       <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="testAddEditName" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.testSearchEditName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchUser_ViewInformation_IntegrationTest.testSearchView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDTP" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
       <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="testSearchEditName" />
+      <option name="METHOD_NAME" value="testSearchView" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchEditName" />
+        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest" />
         <item itemvalue="JUnit.ManageEquipmentTest" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testAddEditName" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.deleteEntry" />
+        <item itemvalue="JUnit.ManageEquipmentTest.testAddNonExistentEquipment" />
+        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchView" />
+        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +199,12 @@
       <workItem from="1650283762346" duration="9981000" />
       <workItem from="1650366660609" duration="621000" />
       <workItem from="1650373355576" duration="8182000" />
-      <workItem from="1650623034125" duration="1900000" />
+      <workItem from="1650623034125" duration="3384000" />
+      <workItem from="1650626633660" duration="44000" />
+      <workItem from="1652269461802" duration="1434000" />
+      <workItem from="1652271091542" duration="2364000" />
+      <workItem from="1652273495588" duration="777000" />
+      <workItem from="1652274310307" duration="4242000" />
     </task>
     <task id="LOCAL-00001" summary="Add login">
       <created>1650286134548</created>
@@ -205,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650291298031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add SearchUser_ViewInformation_IntegrationTest">
+      <created>1650624958724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650624958724</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,9 +248,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add login" />
     <MESSAGE value="Add ManageEquipmentTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ManageEquipmentTest" />
+    <MESSAGE value="Add SearchUser_ViewInformation_IntegrationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SearchUser_ViewInformation_IntegrationTest" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="598" y="183" key="FileChooserDialogImpl" timestamp="1652270034455">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="598" y="183" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652270034455" />
     <state x="264" y="309" width="337" height="203" key="Github.ShareDialog" timestamp="1650282405885">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -237,22 +264,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="186" y="116" key="Github.UntrackedFilesDialog/0.0.1536.816@0.0.1536.816" timestamp="1650282411276" />
-    <state width="1493" height="49" key="GridCell.Tab.0.bottom" timestamp="1650624625174">
+    <state width="1493" height="381" key="GridCell.Tab.0.bottom" timestamp="1652289641793">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.center" timestamp="1650624625174">
+    <state width="1493" height="381" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
+    <state width="1493" height="381" key="GridCell.Tab.0.center" timestamp="1652289641793">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.left" timestamp="1650624625174">
+    <state width="1493" height="381" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
+    <state width="1493" height="381" key="GridCell.Tab.0.left" timestamp="1652289641793">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.right" timestamp="1650624625174">
+    <state width="1493" height="381" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
+    <state width="1493" height="381" key="GridCell.Tab.0.right" timestamp="1652289641793">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
+    <state width="1493" height="381" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1650381607249">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -269,17 +296,21 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state x="0" y="66" key="Maven.ArtifactSearchDialog" timestamp="1650378560771">
+    <state x="0" y="66" key="Maven.ArtifactSearchDialog" timestamp="1652271392475">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="0" y="66" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1650378560771" />
-    <state x="0" y="56" key="SettingsEditor" timestamp="1650283449644">
+    <state x="0" y="66" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1652271392475" />
+    <state x="0" y="56" width="914" height="709" key="SettingsEditor" timestamp="1652274369791">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="0" y="56" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1650283449644" />
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2" timestamp="1650291315832">
+    <state x="0" y="56" width="914" height="709" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1652274369791" />
+    <state x="98" y="144" key="Vcs.Push.Dialog.v2" timestamp="1650624998084">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1650291315832" />
+    <state x="98" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1650624998084" />
+    <state x="0" y="62" key="new project wizard" timestamp="1652270049286">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="0" y="62" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1652270049286" />
   </component>
 </project>
