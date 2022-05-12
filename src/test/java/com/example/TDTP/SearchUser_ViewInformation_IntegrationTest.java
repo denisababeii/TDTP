@@ -34,7 +34,7 @@ public class SearchUser_ViewInformation_IntegrationTest {
 
     // Tests whether searching for an existing user and retrieving its information works
     @Test
-    public void testSearchView() {
+    public void testSearchView() throws InterruptedException {
         doLogin();
         WebDriverWait wait = new WebDriverWait(driver, 100);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[3]/div/button"))).click();
@@ -43,7 +43,8 @@ public class SearchUser_ViewInformation_IntegrationTest {
 
         driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr[1]/td[2]/div/div")).click();
         WebElement elem = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/div[2]/div/div/div[2]/div[3]/p[2]")));
-        //assert elem.getText().equals("Babeii");
+        Thread.sleep(500);
+        assert elem.getText().equals("Babeii");
         driver.close();
     }
 }

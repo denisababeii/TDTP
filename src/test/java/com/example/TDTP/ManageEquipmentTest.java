@@ -36,7 +36,7 @@ public class ManageEquipmentTest {
 
     // Tests whether adding new equipment works
     @Test
-    public void testAddNonExistentEquipment() {
+    public void testAddNonExistentEquipment() throws InterruptedException {
         doLogIn();
         WebDriverWait wait = new WebDriverWait(driver, 100);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button"))).click();
@@ -44,12 +44,12 @@ public class ManageEquipmentTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/button[2]"))).click();
 
         int count = driver.findElements(By.className("MuiTableRow-root")).size();
-
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/button")));
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/div/div/input")).sendKeys("New Equipment");
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/button")).click();
 
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.className("MuiTableRow-root"),0));
+        Thread.sleep(500);
         //assert driver.findElements(By.className("MuiTableRow-root")).size() == count+1;
 
         deleteEntry();
@@ -58,7 +58,7 @@ public class ManageEquipmentTest {
 
     // Tests whether adding equipment with the same name as one already saved fails
     @Test
-    public void testAddExistentEquipment() {
+    public void testAddExistentEquipment() throws InterruptedException {
         doLogIn();
         WebDriverWait wait = new WebDriverWait(driver, 100);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[4]/div/button"))).click();
@@ -80,13 +80,14 @@ public class ManageEquipmentTest {
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/div[1]/button")).click();
 
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.className("MuiTableRow-root"),0));
-        //assert driver.findElements(By.className("MuiTableRow-root")).size() == count;
+        Thread.sleep(500);
+        assert driver.findElements(By.className("MuiTableRow-root")).size() == count;
 
         deleteEntry();
         driver.close();
     }
 
-    public void deleteEntry() {
+    public void deleteEntry() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 100);
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.className("MuiTableRow-root"),0));
         List<WebElement> elements = driver.findElements(By.className("MuiTableRow-root"));
@@ -94,6 +95,7 @@ public class ManageEquipmentTest {
             if(elem.findElements(By.xpath("//*[text()='New Equipment']")).size() != 0) {
                 WebElement button = elem.findElement(By.className("MuiIconButton-root"));
                 wait.until(ExpectedConditions.elementToBeClickable(button));
+                Thread.sleep(500);
                 button.click();
             }
         }

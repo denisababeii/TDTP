@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Add SearchUser_ViewInformation_IntegrationTest">
-      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Generate reports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddNewBuildingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" afterDir="false" />
     </list>
@@ -83,17 +82,35 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\java\com\example\TDTP" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchUser_ViewInformation_IntegrationTest">
+  <component name="RunManager" selected="JUnit.ManageEquipmentTest.testAddNonExistentEquipment">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddNewBuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.TDTP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.TDTP" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.AddNewBuildingTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,29 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.testSearchViewName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDTP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.TDTP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="testSearchViewName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest" />
-        <item itemvalue="JUnit.ManageEquipmentTest" />
         <item itemvalue="JUnit.ManageEquipmentTest.testAddNonExistentEquipment" />
+        <item itemvalue="JUnit.ManageEquipmentTest" />
+        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest" />
+        <item itemvalue="JUnit.AddNewBuildingTest" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchView" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +205,9 @@
       <workItem from="1652269461802" duration="1434000" />
       <workItem from="1652271091542" duration="2364000" />
       <workItem from="1652273495588" duration="777000" />
-      <workItem from="1652274310307" duration="4242000" />
+      <workItem from="1652274310307" duration="4478000" />
+      <workItem from="1652290053312" duration="40000" />
+      <workItem from="1652338215566" duration="890000" />
     </task>
     <task id="LOCAL-00001" summary="Add login">
       <created>1650286134548</created>
@@ -227,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650624958724</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Generate reports">
+      <created>1652289985826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652289985826</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +259,8 @@
     <MESSAGE value="Add login" />
     <MESSAGE value="Add ManageEquipmentTest" />
     <MESSAGE value="Add SearchUser_ViewInformation_IntegrationTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SearchUser_ViewInformation_IntegrationTest" />
+    <MESSAGE value="Generate reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generate reports" />
   </component>
   <component name="WindowStateProjectService">
     <state x="598" y="183" key="FileChooserDialogImpl" timestamp="1652270034455">
@@ -264,38 +275,38 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="186" y="116" key="Github.UntrackedFilesDialog/0.0.1536.816@0.0.1536.816" timestamp="1650282411276" />
-    <state width="1493" height="381" key="GridCell.Tab.0.bottom" timestamp="1652289641793">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1652339080162">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="381" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
-    <state width="1493" height="381" key="GridCell.Tab.0.center" timestamp="1652289641793">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
+    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1652339080162">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="381" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
-    <state width="1493" height="381" key="GridCell.Tab.0.left" timestamp="1652289641793">
+    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
+    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1652339080162">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="381" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
-    <state width="1493" height="381" key="GridCell.Tab.0.right" timestamp="1652289641793">
+    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1652339080162">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="381" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1652289641793" />
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1650381607249">
+    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1652290001196">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1650381607249">
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652290001196" />
+    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1652290001196">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1650381607249">
+    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1652290001196" />
+    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1652290001196">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1650381607249">
+    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1652290001196" />
+    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1652290001196">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
+    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1652290001196" />
     <state x="0" y="66" key="Maven.ArtifactSearchDialog" timestamp="1652271392475">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -304,10 +315,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="0" y="56" width="914" height="709" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1652274369791" />
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2" timestamp="1650624998084">
+    <state x="98" y="144" key="Vcs.Push.Dialog.v2" timestamp="1652289993463">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1650624998084" />
+    <state x="98" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1652289993463" />
     <state x="0" y="62" key="new project wizard" timestamp="1652270049286">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
