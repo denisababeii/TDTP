@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/addBooking/AddBookingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ChangeUserRoleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +46,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -73,8 +74,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\resources\drivers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vsera\Programming\TDTP\src\test\resources\drivers" />
+      <recent name="C:\Users\vsera\Programming\TDTP\src\test\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName">
+  <component name="RunManager" selected="JUnit.AddBookingTest.testAddBooking">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -84,6 +89,37 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddBookingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.TDTP.addBooking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.TDTP.addBooking" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.addBooking.AddBookingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddBookingTest.testAddBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.TDTP.addBooking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.TDTP.addBooking" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.addBooking.AddBookingTest" />
+      <option name="METHOD_NAME" value="testAddBooking" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,38 +135,6 @@
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
       <option name="MAIN_CLASS_NAME" value="com.example.TDTP.ManageEquipmentTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.deleteEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDTP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.TDTP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="deleteEntry" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchUser_ViewInformation_IntegrationTest.testAddEditName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDTP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.TDTP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.SearchUser_ViewInformation_IntegrationTest" />
-      <option name="METHOD_NAME" value="testAddEditName" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddBookingTest.testAddBooking" />
+        <item itemvalue="JUnit.AddBookingTest" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchViewName" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchEditName" />
         <item itemvalue="JUnit.ManageEquipmentTest" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testAddEditName" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.deleteEntry" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +194,7 @@
       <workItem from="1650366660609" duration="621000" />
       <workItem from="1650373355576" duration="8182000" />
       <workItem from="1650623034125" duration="1900000" />
+      <workItem from="1652391258921" duration="6300000" />
     </task>
     <task id="LOCAL-00001" summary="Add login">
       <created>1650286134548</created>
@@ -221,65 +226,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add login" />
     <MESSAGE value="Add ManageEquipmentTest" />
     <option name="LAST_COMMIT_MESSAGE" value="Add ManageEquipmentTest" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="264" y="309" width="337" height="203" key="Github.ShareDialog" timestamp="1650282405885">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="264" y="309" width="337" height="203" key="Github.ShareDialog/0.0.1536.816@0.0.1536.816" timestamp="1650282405885" />
-    <state x="186" y="116" key="Github.UntrackedFilesDialog" timestamp="1650282411276">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="186" y="116" key="Github.UntrackedFilesDialog/0.0.1536.816@0.0.1536.816" timestamp="1650282411276" />
-    <state width="1493" height="49" key="GridCell.Tab.0.bottom" timestamp="1650624625174">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.center" timestamp="1650624625174">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.left" timestamp="1650624625174">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="49" key="GridCell.Tab.0.right" timestamp="1650624625174">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="49" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1650624625174" />
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1650381607249">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1650381607249">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1650381607249">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1650381607249">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1493" height="258" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1650381607249" />
-    <state x="0" y="66" key="Maven.ArtifactSearchDialog" timestamp="1650378560771">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="0" y="66" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1650378560771" />
-    <state x="0" y="56" key="SettingsEditor" timestamp="1650283449644">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="0" y="56" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1650283449644" />
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2" timestamp="1650291315832">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="98" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1650291315832" />
   </component>
 </project>
