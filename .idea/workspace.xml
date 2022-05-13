@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Generate reports">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddNewBuildingTest.java" afterDir="false" />
+    <list default="true" id="1852500a-e9aa-45ba-ab0d-6b5e82a148db" name="Default Changelist" comment="Add Fia's reports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/AddBookingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/ManageEquipmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/TDTP/SearchUser_ViewInformation_IntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="victor" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,7 +87,7 @@
       <recent name="C:\Users\HP\Documents\Anul3\TDT\TDTP\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ManageEquipmentTest.testAddNonExistentEquipment">
+  <component name="RunManager" selected="JUnit.AddBookingTest (1)">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -101,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddNewBuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddBookingTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDTP" />
       <extension name="coverage">
         <pattern>
@@ -110,22 +108,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.AddNewBuildingTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.AddBookingTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManageEquipmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddBookingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.TDTP.*" />
+          <option name="PATTERN" value="com.example.TDTP.addBooking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.TDTP" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.ManageEquipmentTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TDTP.addBooking.AddBookingTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManageEquipmentTest.testAddNonExistentEquipment" />
-        <item itemvalue="JUnit.ManageEquipmentTest" />
-        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest" />
-        <item itemvalue="JUnit.AddNewBuildingTest" />
+        <item itemvalue="JUnit.AddBookingTest (1)" />
+        <item itemvalue="JUnit.AddBookingTest" />
         <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest.testSearchView" />
+        <item itemvalue="JUnit.SearchUser_ViewInformation_IntegrationTest" />
+        <item itemvalue="JUnit.ManageEquipmentTest.testAddNonExistentEquipment" />
       </list>
     </recent_temporary>
   </component>
@@ -275,22 +273,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="186" y="116" key="Github.UntrackedFilesDialog/0.0.1536.816@0.0.1536.816" timestamp="1650282411276" />
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1652339080162">
+    <state width="1493" height="494" key="GridCell.Tab.0.bottom" timestamp="1652441150689">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
-    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1652339080162">
+    <state width="1493" height="494" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1652441150689" />
+    <state width="1493" height="494" key="GridCell.Tab.0.center" timestamp="1652441150689">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
-    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1652339080162">
+    <state width="1493" height="494" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1652441150689" />
+    <state width="1493" height="494" key="GridCell.Tab.0.left" timestamp="1652441150689">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
-    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1652339080162">
+    <state width="1493" height="494" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1652441150689" />
+    <state width="1493" height="494" key="GridCell.Tab.0.right" timestamp="1652441150689">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1652339080162" />
+    <state width="1493" height="494" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1652441150689" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1652290001196">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
