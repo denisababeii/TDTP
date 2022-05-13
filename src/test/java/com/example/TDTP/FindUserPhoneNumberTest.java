@@ -25,6 +25,26 @@ public class FindUserPhoneNumberTest {
 
     private static final String SELECTOR_USERS_BUTTON_PATH = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[2]/div[3]/div/button";
 
+    private static final String SELECTOR_USER_BUTTON_PATH = "/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr/td[2]/div/div";
+
+    private static final String SELECTOR_PHONE_NUMBER_PATH = "/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div[2]/div[5]/p[2]";
+
+    private static final String EXPECTED_PHONE_NUMBER = "0748518713";
+
+    private static final String TESTED_NAME = "Raileanu";
+
+    private void findSpecificUserDetails(WebDriverWait wait, String name) throws InterruptedException {
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_USERS_BUTTON_PATH))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_SEARCH_INPUT_PATH))).sendKeys(name, Keys.ENTER);
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.className("MuiTableRow-root"),2));
+
+        WebElement foundUser = driver.findElement(By.xpath(SELECTOR_USER_BUTTON_PATH));
+
+        foundUser.click();
+
+        Thread.sleep(3000);
+    }
+
     @BeforeEach
     public void doLogin() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
@@ -41,19 +61,12 @@ public class FindUserPhoneNumberTest {
     @Test
     public void test_FINDS_USERS_PHONE_NUMBER_when_USER_DETAILS_ENTERED() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 100);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_USERS_BUTTON_PATH))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_SEARCH_INPUT_PATH))).sendKeys("Raileanu", Keys.ENTER);
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.className("MuiTableRow-root"),2));
 
-        WebElement foundUser = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr/td[2]/div/div"));
+        findSpecificUserDetails(wait, TESTED_NAME);
 
-        foundUser.click();
+        WebElement phoneNumber = driver.findElement(By.xpath(SELECTOR_PHONE_NUMBER_PATH));
 
-        Thread.sleep(3000);
-
-        WebElement phoneNumber = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div[2]/div[5]/p[2]"));
-
-        assert phoneNumber.getText().equalsIgnoreCase("0748518713");
+        assert phoneNumber.getText().equalsIgnoreCase(EXPECTED_PHONE_NUMBER);
     }
 
     @AfterEach
