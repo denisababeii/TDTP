@@ -24,26 +24,35 @@ public class AddBookingTest {
         wait = new WebDriverWait(driver, 100);
         String URL = "https://lhdemo:LH@Evozon!2022@lighthouse-demo.evozon.com/login";
         driver.get(URL);
-        WebDriverWait wait = new WebDriverWait(driver, 100);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.className("MuiButton-label")));
-        driver.findElement(By.xpath("/html/body/div/div[2]/main/div/div/form/div[1]/div/input")).sendKeys(username);
-        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.xpath("/html/body/div/div[2]/main/div/div/form/div[1]/div/input"))
+                .sendKeys(username);
+        driver.findElement(By.name("password"))
+                .sendKeys(password);
         element.click();
     }
 
     // Tests whether searching for an existing user and retrieving its information works
     @Test
     public void testAddBooking() {
-        waitFor(".//span[contains(@class, \"MuiButton-label\") and text()=\"Accept Cookies\"]").click();
-        waitFor(".//span[text()=\"ADD NEW BOOKING\"]").click();
-        waitFor(".//div[contains(@class,\"DayPicker-Day\")]/div/div[text()=\"17\"]").click();
-        waitFor(".//span[text()=\"BOOK DESK\" and contains(@class, \"MuiButton-label\")]").click();
+        waitFor(".//span[contains(@class, \"MuiButton-label\") and text()=\"Accept Cookies\"]")
+                .click();
+        waitFor(".//span[text()=\"ADD NEW BOOKING\"]")
+                .click();
+        waitFor(".//div[contains(@class,\"DayPicker-Day\")]/div/div[text()=\"17\"]")
+                .click();
+        waitFor(".//span[text()=\"BOOK DESK\" and contains(@class, \"MuiButton-label\")]")
+                .click();
 
-        Assertions.assertTrue(waitFor(".//span/strong[text()=\"Victorash, Parter, DEMO-1\"]").isDisplayed());
-        Assertions.assertTrue(waitFor(".//span[text()=\"09:00 - 18:00\"]").isDisplayed());
-        Assertions.assertTrue(waitFor(".//h6/strong[text()=\"17 May\"]").isDisplayed());
+        assertVisible(".//span/strong[text()=\"Victorash, Parter, DEMO-1\"]");
+        assertVisible(".//span[text()=\"09:00 - 18:00\"]");
+        assertVisible(".//h6/strong[text()=\"17 May\"]");
 
         removeBooking();
+    }
+
+    private void assertVisible(String xpath) {
+        Assertions.assertTrue(waitFor(xpath).isDisplayed());
     }
 
     private WebElement waitFor(String xpath) {
