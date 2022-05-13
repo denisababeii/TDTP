@@ -11,9 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
-
-public class SearchUsersTest {
+public class FindUserPhoneNumberTest {
 
     WebDriver driver;
 
@@ -41,14 +39,21 @@ public class SearchUsersTest {
     }
 
     @Test
-    public void test_FINDS_USER_when_USER_SEARCHED_BY_NAME() throws InterruptedException {
+    public void test_FINDS_USERS_PHONE_NUMBER_when_USER_DETAILS_ENTERED() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 100);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_USERS_BUTTON_PATH))).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(SELECTOR_SEARCH_INPUT_PATH))).sendKeys("Raileanu", Keys.ENTER);
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.className("MuiTableRow-root"),3));
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.className("MuiTableRow-root"),2));
 
-        WebElement element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr/td[2]/div/div"));
-        assert element.getText().equals("Raileanu");
+        WebElement foundUser = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div/div[3]/div[1]/table/tbody/tr/td[2]/div/div"));
+
+        foundUser.click();
+
+        Thread.sleep(3000);
+
+        WebElement phoneNumber = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[2]/div/div/div[2]/div[5]/p[2]"));
+
+        assert phoneNumber.getText().equalsIgnoreCase("0748518713");
     }
 
     @AfterEach
